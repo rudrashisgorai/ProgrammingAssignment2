@@ -38,3 +38,15 @@ cacheSolve <- function(a, ...) {
   a$setInverse(inv)
   inv
 }
+##---------------Testing the function-----
+## cacheSolve(makeCacheMatrix(matrix(1:4,2,2)))
+##     [,1] [,2]
+##[1,]   -2  1.5
+##[2,]    1 -0.5
+## cacheSolve(makeCacheMatrix(matrix(8:12,2,2)))
+##     [,1] [,2]
+##[1,] -5.5    5
+##[2,]  4.5   -4
+## Warning message:
+## In matrix(8:12, 2, 2) :
+##   data length [5] is not a sub-multiple or multiple of the number of rows [2]
